@@ -1,0 +1,49 @@
+@use "../base/variables" as *;
+
+.author-info {
+	margin: 40px 0 30px;
+	display: flex;
+	background-color: #fff;
+	box-shadow: $card-shadow;
+	border-radius: $radius;
+	gap: 20px;
+	padding: 10px 15px;
+	.photo {
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border: 1px solid $red;
+		}
+	}
+	.text {
+		line-height: 1.6;
+		.author-name {
+			font-size: 20px;
+			margin: 0 auto 10px;
+		}
+		.about {
+			word-wrap: break-word;
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.author-info {
+		flex-direction: column;
+		gap: 5px;
+		.photo {
+			margin: auto;
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		.text {
+			.author-name {
+				width: fit-content;
+			}
+		}
+	}
+}

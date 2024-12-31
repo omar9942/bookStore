@@ -1,0 +1,33 @@
+extends ../index
+
+block content
+	.container 
+		.book-preview 
+			.cover-actions 
+				img.cover(src=`/img/books/${book.cover}`, alt=`${app.coverAlt} ${book.title}`)
+				.actions 
+					button.btn-cart= app.addCart
+						svg.icon
+							use(xlink:href='/img/icons.svg#icon-shopping-cart')
+					button.btn-favourites= app.addFav
+						svg.icon
+							use(xlink:href='/img/icons.svg#icon-heart')
+			.book-details 
+				h1.title= book.title 
+				p.author= `${page.bookBy} : `
+					a(href=`/authors/${book.author.slug}` title=`${book.author.name}`)= book.author.name
+				span.price #{book.price}$
+				p.year= `${page.year} : ${book.year}`
+				p.pages= `${page.pages} : ${book.pages}`
+				.genre-lang
+					.box.genres
+						strong.box-name= app.genres
+						each genre in book.genres
+							a.tag(href=`/genres/${genre.slug}` title=`${genre.name}`)= genre.name
+					.box 
+						strong.box-name= page.languages
+						each language in book.languages
+							span.tag= language
+				.description
+					strong= page.description
+					p= book.description

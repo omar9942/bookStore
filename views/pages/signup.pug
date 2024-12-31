@@ -1,0 +1,12 @@
+extends ../index
+
+block content 
+	.container 
+		.form-box
+			h1.title= page.title
+			form.signup-form
+				input#name(type='text',  placeholder=`${app.name}`, required)
+				input#email(type='email', placeholder=`${app.email}`, required)
+				input#password(type="password", placeholder=`${app.password}`, required, minlength='8')
+				input#passwordConfirm(type="password", placeholder=`${app.passwordConfirm}`, required, minlength='8')
+				button#submit(type="submit")= page.create

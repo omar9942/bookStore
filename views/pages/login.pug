@@ -1,0 +1,13 @@
+extends ../index
+
+block content 
+	.container 
+		.form-box
+			h1.title= page.title
+			form.login-form(onSubmit="handleLogin(event)")
+				input#email(type='email', placeholder=`${app.email}`, required)
+				input#password(type="password", placeholder=`${app.password}`, required, minlength='8')
+				button#submit(type="submit")= app.login
+			.or
+				span= page.or
+			a.signup(href="/signup" title=`${app.signup}`)= app.signup

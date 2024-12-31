@@ -1,0 +1,28 @@
+/* === Root === */
+@use "base/root";
+
+/* === Global rules === */
+@use "base/global_rules";
+
+/* === Header === */
+@use "layout/header";
+
+/* === Components === */
+@use "components/bookCard";
+@use "components/card";
+
+/* === PAGES === */
+/* --- Homepage --- */
+@use "pages/homepage";
+/* --- ErrorPage --- */
+@use "pages/errorPage";
+/* --- BookPage --- */
+@use "pages/bookPage";
+/* --- AuthorPage --- */
+@use "pages/authorPage";
+
+/* --- Login --- */
+@use "pages/loginSignup";
+
+/* === Footer === */
+@use "layout/footer";

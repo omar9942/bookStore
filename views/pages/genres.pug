@@ -1,0 +1,10 @@
+extends ../index
+
+block content
+	.container 
+		h1.page-title= page.title
+		.cardsContainer 
+			for genre in genres
+				a.card(href=`/genres/${genre.slug}` title=`${genre.name}`)
+					h3.name= genre.name
+					span.av-books= `${app.available}: ${genre.books.length}`

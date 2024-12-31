@@ -1,0 +1,234 @@
+@use "sass:color";
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+header {
+	background-color: $dark-red;
+	position: sticky;
+	z-index: 15;
+	top: 0;
+	box-shadow: $shadow;
+	border-radius: 0 0 $radius $radius;
+	.container {
+		@include flex;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.logo-lang {
+		@include flex;
+		gap: 25px;
+		.logo {
+			@include flex;
+			color: $bg-color;
+			gap: 5px;
+			height: var(--head-height);
+			font-size: 26px;
+			img {
+				width: 40px;
+			}
+		}
+		select {
+			cursor: pointer;
+			color: $brown;
+			appearance: none;
+			background-color: $bg-color;
+			background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+			background-repeat: no-repeat;
+			background-position-x: 100%;
+			background-position-y: 50%;
+			padding: 5px 25px 5px 5px;
+			border: 1px solid $brown;
+			border-radius: $radius;
+		}
+	}
+	.nav {
+		display: flex;
+		li > a,
+		.search {
+			@include flex;
+			position: relative;
+			cursor: pointer;
+			font-size: 18px;
+			height: var(--head-height);
+			padding: 0 30px;
+			color: $bg-color;
+			transition: $transition;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 3px;
+				width: 0;
+				transition: $transition;
+				background-color: $yellow;
+			}
+			&:hover {
+				background-color: color.adjust($dark-red, $lightness: -4%);
+				&::before {
+					width: 100%;
+				}
+			}
+		}
+		.search {
+			gap: 2px;
+			.icon {
+				width: 20px;
+				height: 20px;
+				fill: $bg-color;
+			}
+		}
+		.login {
+			gap: 4px;
+			.icon {
+				fill: $bg-color;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+// SEARCH FORM
+.searchForm {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	border-radius: $radius;
+	background-color: white;
+	border: $border;
+	top: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+	span {
+		cursor: pointer;
+		position: absolute;
+		top: -1px;
+		right: -1px;
+		padding: 8px;
+		background-color: $red;
+		color: $bg-color;
+		line-height: 1.2;
+		font-weight: bold;
+		transition: $transition;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		text-align: center;
+	}
+	.head-search {
+		display: flex;
+		flex-wrap: wrap;
+		.select {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			> * {
+				display: flex;
+				gap: 5px;
+				input {
+					accent-color: $red;
+				}
+			}
+		}
+		.search {
+			width: fit-content;
+			margin: 10px auto;
+			display: flex;
+			#searchVal {
+				font-family: inherit;
+				background-color: #fffbfb;
+				font-size: 14px;
+				padding: 5px 10px;
+				width: 250px;
+				border: 1px solid $black;
+				border-right: none;
+				border-radius: $radius 0 0 $radius;
+				&:focus {
+					outline: none;
+				}
+			}
+			button {
+				cursor: pointer;
+				border: 1px solid $brown;
+				border-radius: 0 $radius $radius 0;
+				background-color: $red;
+				padding: 5px 10px;
+				color: $bg-color;
+				transition: $transition;
+				.icon {
+					fill: $bg-color;
+					width: 20px;
+					height: 20px;
+				}
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	header {
+		.logo-lang {
+			gap: 20px;
+			.logo {
+				font-size: 20px;
+				img {
+					width: 30px;
+				}
+			}
+			select {
+				font-size: 12px;
+			}
+		}
+		.nav {
+			li > a,
+			.search {
+				font-size: 15px;
+				padding: 0 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	header {
+		.container {
+			.logo-lang {
+				width: 100%;
+			}
+			.nav {
+				flex: 1;
+				justify-content: space-around;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	header .nav {
+		li > a,
+		.search {
+			padding: 0 5px;
+		}
+		li > a {
+			font-size: 13px;
+		}
+		.search {
+			span {
+				display: none;
+			}
+		}
+		.login {
+			.icon {
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+}

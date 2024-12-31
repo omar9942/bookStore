@@ -1,0 +1,89 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.book {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 250px;
+	gap: 5px;
+	align-items: center;
+	background-color: white;
+	border: $border;
+	border-radius: $radius;
+	overflow: hidden;
+	box-shadow: $card-shadow;
+	text-align: center;
+	padding: 1rem;
+	transition: $transition;
+	min-height: 300px;
+	position: relative;
+	&::before {
+		content: attr(price);
+		position: absolute;
+		font-size: 15px;
+		padding: 0 5px;
+		font-size: 20px;
+		left: 0;
+		top: 0px;
+		background-color: $red;
+		color: white;
+	}
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+	& > * {
+		text-align: center;
+		line-height: 1.2;
+	}
+	.bookLink {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		.title {
+			color: $black;
+			word-wrap: break-word;
+			font-size: 16px;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: $radius;
+	}
+	.author {
+		color: $dark-red;
+		font-size: 14px;
+		transition: $transition;
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+@media (max-width: 508px) {
+	.booksContainer {
+		grid-template-columns: repeat(2, minmax(120px, 1fr));
+	}
+	.book {
+		min-height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.book {
+		&::before {
+			font-size: 18px;
+		}
+		.bookLink {
+			.title {
+				font-size: 13px;
+			}
+		}
+		.author {
+			font-size: 12px;
+		}
+	}
+}

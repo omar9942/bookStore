@@ -1,0 +1,164 @@
+@use "../base/variables" as *;
+
+/* Welcome the user */
+.welcome {
+	position: relative;
+	margin: 30px 0;
+	// css background
+	background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(
+			#1d1d1d 25%,
+			#1a1a1a 25%,
+			#1a1a1a 50%,
+			transparent 50%,
+			transparent 75%,
+			#242424 75%,
+			#242424
+		);
+	background-color: #131313;
+	background-size: 20px 20px;
+	color: $bg-color;
+	border-radius: $radius $radius 0 0;
+	.overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($color: $dark-red, $alpha: 60%);
+		border-radius: $radius $radius 0 0;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+	.text {
+		width: fit-content;
+		margin: 25px auto;
+		h1 {
+			font-size: 40px;
+			line-height: 1.5;
+		}
+		p {
+			font-size: 25px;
+			font-weight: 300;
+		}
+	}
+	form {
+		display: flex;
+		width: fit-content;
+		margin: auto;
+		#search {
+			font-family: inherit;
+			background-color: $bg-color;
+			font-size: 16px;
+			padding: 5px 10px;
+			width: 500px;
+			border: 1px solid $black;
+			border-right: none;
+			border-radius: $radius 0 0 $radius;
+			&:focus {
+				outline: none;
+			}
+		}
+		button {
+			cursor: pointer;
+			border: 1px solid $black;
+			border-radius: 0 $radius $radius 0;
+			background-color: $lbrown;
+			padding: 5px 10px;
+			color: $bg-color;
+			transition: $transition;
+			.icon {
+				fill: $bg-color;
+				width: 20px;
+				height: 20px;
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.welcome {
+		form {
+			#search {
+				width: 400px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.welcome {
+		.text {
+			h1 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+		form {
+			#search {
+				width: 300px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.welcome {
+		form {
+			#search {
+				width: 250px;
+			}
+		}
+	}
+}
+
+/* Books section */
+.books {
+	margin-bottom: 50px;
+	.text {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		h2 {
+			font-size: 25px;
+			color: $black;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			font-size: 15px;
+			gap: 5px;
+			color: $dark-red;
+			.icon {
+				width: 20px;
+				height: 20px;
+				fill: $dark-red;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.books {
+		.text {
+			h2 {
+				font-size: 20px;
+			}
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+}

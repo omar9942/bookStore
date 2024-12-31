@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	.fade {
+		> * {
+			height: 8px;
+		}
+		.one {
+			background-color: rgba($black, $alpha: 0.1);
+		}
+		.two {
+			background-color: rgba($black, $alpha: 0.4);
+		}
+		.three {
+			background-color: rgba($black, $alpha: 0.8);
+		}
+	}
+	.foot {
+		background-color: $black;
+		padding: 5px 0;
+		.logo {
+			display: flex;
+			align-items: center;
+			color: $bg-color;
+			gap: 5px;
+			font-size: 20px;
+			width: fit-content;
+			img {
+				width: 30px;
+			}
+		}
+		p {
+			color: $bg-color;
+		}
+	}
+}

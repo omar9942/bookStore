@@ -1,0 +1,12 @@
+extends ../index
+
+block content
+	.container 
+		h1.page-title= genre.name
+		.cardsContainer
+			each book in genre.books
+				.book(price=`${book.price}$`)
+					a.bookLink(href=`/books/${book.slug}` title=`${book.title}`)
+						img(src=`/img/books/${book.cover}`, alt=`${app.coverAlt} ${book.title}`)
+						span.title= book.title
+					a.author(href=`/authors/${book.author.slug}` title=`${book.author.name}`)= book.author.name

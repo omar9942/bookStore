@@ -1,0 +1,96 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.form-box {
+	margin: 40px auto;
+	background-color: #fff;
+	border-radius: $radius;
+	padding: 30px;
+	box-shadow: $card-shadow;
+	max-width: 500px;
+	.title {
+		color: $black;
+		width: fit-content;
+		margin: 10px auto 15px;
+		font-size: 30px;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		input,
+		#submit {
+			background-color: whitesmoke;
+			color: $black;
+			padding: 10px 20px;
+			border-radius: 15px;
+			border: $border;
+			&::placeholder {
+				color: #646464;
+			}
+			&:focus {
+				outline: none;
+				&::placeholder {
+					color: #444;
+				}
+			}
+		}
+		#submit {
+			cursor: pointer;
+			border: none;
+			color: $bg-color;
+			transition: $transition;
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+	.or {
+		position: relative;
+		margin: 20px 0;
+		text-align: center;
+		span {
+			position: relative;
+			color: #b6b6b6;
+			z-index: 3;
+			font-size: 14px;
+		}
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+		}
+		&::before {
+			background-color: #fff;
+			height: 10px;
+			left: 50%;
+			margin: -5px 0 0 -20px;
+			top: 50%;
+			width: 40px;
+			z-index: 2;
+		}
+		&::after {
+			border-bottom: 1px solid #dadada;
+			left: 10%;
+			top: 50%;
+			width: 81%;
+			z-index: 1;
+		}
+	}
+	.signup {
+		display: block;
+		@include button(5px 20px);
+		transition: $transition;
+		margin: auto;
+		border-radius: 25px;
+		background-color: $red;
+		color: $bg-color;
+	}
+	.login-form #submit {
+		background-color: $brown;
+	}
+	.signup-form #submit {
+		background-color: $red;
+	}
+}

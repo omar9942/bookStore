@@ -1,0 +1,12 @@
+extends ../index
+
+block content
+	.container 
+		h1.page-title= page.title
+		.cardsContainer
+			for author in authors 
+				a.card(href=`/authors/${author.slug}` title=`${author.name}`)
+					.photo 
+						img(src=`/img/authors/${author.photo}`, alt=`${app.photoAlt} ${author.name}`)
+					h3.name= author.name
+					span.av-books= `${app.available}: ${author.books.length}`

@@ -1,0 +1,16 @@
+extends ../index
+
+block content
+	.container 
+		.author-info 
+			.photo 
+				img(src=`/img/authors/${author.photo}`, alt=`${app.photoAlt} ${author.name}`)
+			.text 
+				h2.author-name=author.name
+				p.about=author.about
+		.cardsContainer
+			each book in author.books
+				.book(price=`${book.price}$`)
+					a.bookLink(href=`/books/${book.slug}` title=`${book.title}`)
+						img(src=`/img/books/${book.cover}`, alt=`${app.coverAlt} ${book.title}`)
+						span.title= book.title

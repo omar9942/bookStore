@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+
+.card {
+	position: relative;
+	background-color: #fff;
+	border: $border;
+	box-shadow: $card-shadow;
+	padding: 1rem 1rem 3rem;
+	border-radius: $radius;
+	transition: $transition;
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+	.photo {
+		margin: auto;
+		width: fit-content;
+		img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			border: 1px solid $red;
+		}
+	}
+	.name {
+		font-size: 15px;
+		text-align: center;
+	}
+	.av-books {
+		color: $dark-red;
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+	}
+}

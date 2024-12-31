@@ -1,0 +1,110 @@
+{
+	"app": {
+		"title": "BookStore",
+		"authors": "Authors",
+		"author": "Author",
+		"genres": "Genres",
+		"books": "Books",
+		"book": "Book",
+		"search": "Search",
+		"searchBook": "Search for a book...",
+		"signup": "Sign up",
+		"login": "Login",
+		"logoAlt": "BookStore logo",
+		"coverAlt": "The cover of",
+		"photoAlt": "a photo of",
+		"name": "Your name",
+		"email": "Email",
+		"password": "Password",
+		"passwordConfirm": "Confirm password",
+		"addCart": "Add to cart",
+		"addFav": "Add to favourites",
+		"available": "available books",
+		"searchFor": "What are you looking for ?",
+		"madeBy": "Made with 🤍 by Omar"
+	},
+	"languages": {
+		"English": "English",
+		"Arabic": "Arabic",
+		"French": "French",
+		"Spanish": "Spanish",
+		"Chinese": "Chinese"
+	},
+	"homepage": {
+		"title": "Your Gateway to a world of stories.",
+		"greeting": "welcome to BookStore",
+		"recent": "Recently added",
+		"checkBooks": "Check available books"
+	},
+	"bookPage": {
+		"languages": "Available languages",
+		"bookBy": "by",
+		"year": "Published in",
+		"pages": "Pages",
+		"description": "Description"
+	},
+	"loginPage": {
+		"title": "Log into your account",
+		"or": "or"
+	},
+	"signupPage": {
+		"title": "Create a new account",
+		"create": "Create account"
+	},
+	"authorsPage": {
+		"title": "Authors"
+	},
+	"errorPage": {
+		"title": "Error"
+	},
+	"errors": {
+		"somethingWrong": "Something went very wrong!",
+		"notFound": "This page is not found!",
+		"jwtError": "There was error, please login again!",
+		"emailAndPassword": "Please provide email and password!",
+		"incorrectLogin": "Incorrect email or password",
+		"protected": "You have to login to get access",
+		"noUserWithEmail": "There is no user with this email!",
+		"userNoLongerExists": "The user bleonging to this token no loger exits!",
+		"changedPassword": "Password has been changed, please login again!",
+		"errorSendingEmail": "There was an error sending the email. Try again later!",
+		"wrongCurrentPassword": "Your current password is wrong",
+		"dbs": {
+			"books": "book",
+			"users": "user",
+			"genres": "genre",
+			"authors": "author"
+		},
+		"fields": {
+			"en.title": "English title",
+			"en.name": "English name",
+			"ar.title": "Arabic title",
+			"ar.name": "Arabic name",
+			"author": "Author",
+			"pages": "Pages",
+			"year": "Year",
+			"price": "Price",
+			"name": "Name",
+			"email": "Email",
+			"password": "Password",
+			"passwordConfirm": "Password Confirm"
+		},
+		"required": "Please write the {path}!",
+		"minlength": "{path} should have atleast {value} characters!",
+		"maxlength": "{path} cannot exceed {value} characters!",
+		"min": "{path} should be atleast {value}",
+		"max": "{path} cannot be more than {value}",
+		"duplicate": "{value} already exits, please write another one!",
+		"castError": "Invalid value: {value}",
+		"noID": "There is no {doc} with this ID",
+		"noPermission": "You do not have permission to perform this action",
+		"enum": {
+			"languages": "{value} is not supported!"
+		},
+		"user defined": {
+			"languages": "You have to specify the available languages!",
+			"passwordConfirm": "Passwords are not the same!",
+			"email": "Please provide a valid email"
+		}
+	}
+}

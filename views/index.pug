@@ -1,0 +1,21 @@
+doctype html
+html(dir=`${lng === 'ar' ? "rtl": "ltr"}`)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel='shortcut icon' type='image/png' href='/img/logo.png')
+		title= `${app.title} | ${page.title}`
+		//- Font
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap" rel="stylesheet">
+		//- Styles
+		link(rel="stylesheet", href="/css/main.css")
+		if lng == "ar"
+			link(rel="stylesheet", href="/css/ar.css")
+	body
+		.dark-overlay
+		include layout/_header
+		block content
+		include layout/_footer
+	script(src="/js/index.js" type="module")

@@ -1,0 +1,15 @@
+:root {
+	--head-height: 72px;
+}
+
+@media (max-width: 992px) {
+	:root {
+		--head-height: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--head-height: 40px;
+	}
+}

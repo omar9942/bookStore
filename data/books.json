@@ -1,0 +1,354 @@
+[
+	{
+		"en": {
+			"title": "Atomic Habits",
+			"description": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones"
+		},
+		"ar": {
+			"title": "العادات الذرية",
+			"description": "العادات الذرية هو كتاب يقدم طرق سهلة و مثبتة لبناء العادات الجيدة و التخلص من السيئة"
+		},
+		"author": "674493cc9409e5df7a675d6d",
+		"price": 15,
+		"year": 2010,
+		"pages": 250,
+		"genres": ["673bb0fe5c7b2e4bffe7d9aa"],
+		"languages": ["English", "Arabic"],
+		"cover": "Atomic-Habits.jpeg"
+	},
+	{
+		"en": {
+			"title": "The Great Gatsby",
+			"description": "A classic novel of the Roaring Twenties, exploring themes of wealth and love."
+		},
+		"ar": {
+			"title": "غاتسبي العظيم",
+			"description": "رواية كلاسيكية من عشرينيات القرن الماضي تستكشف موضوعات الثروة والحب."
+		},
+		"author": "674495ff017749237a69e6ad",
+		"price": 12,
+		"year": 1925,
+		"pages": 180,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a5", "673bb0fe5c7b2e4bffe7d9b4"],
+		"languages": ["English", "Arabic"],
+		"cover": "gatsby.jpg"
+	},
+	{
+		"en": {
+			"title": "1984",
+			"description": "A dystopian novel about a totalitarian regime that suppresses individuality and freedom."
+		},
+		"ar": {
+			"title": "1984",
+			"description": "رواية ديستوبية حول نظام شمولي يقمع الفردية والحرية."
+		},
+		"author": "674859b7281e4e4e24ef69c6",
+		"price": 10,
+		"year": 1949,
+		"pages": 328,
+		"genres": ["673c600b896240d44caa2332"],
+		"languages": ["English", "Arabic"],
+		"cover": "1984.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Philosopher's Stone",
+			"description": "The first book in the Harry Potter series, introducing the wizarding world."
+		},
+		"ar": {
+			"title": "هاري بوتر و حجر الفيلسوف",
+			"description": "الكتاب الأول في سلسلة هاري بوتر، يقدم عالم السحر."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 20,
+		"year": 1997,
+		"pages": 223,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-1.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Chamber of Secrets",
+			"description": "Harry returns to Hogwarts and uncovers a hidden chamber."
+		},
+		"ar": {
+			"title": "هاري بوتر و حجرة الأسرار",
+			"description": "يعود هاري إلى هوغوورتس ويكتشف غرفة خفية."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 25,
+		"year": 1998,
+		"pages": 341,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-2.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Prisoner of Azkaban",
+			"description": "Harry faces new challenges as Sirius Black escapes from Azkaban."
+		},
+		"ar": {
+			"title": "هاري بوتر و سجين أزكابان",
+			"description": "يواجه هاري تحديات جديدة مع هروب سيريوس بلاك من أزكابان."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 28,
+		"year": 1999,
+		"pages": 435,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-3.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Goblet of Fire",
+			"description": "Harry competes in the dangerous Triwizard Tournament."
+		},
+		"ar": {
+			"title": "هاري بوتر و كأس النار",
+			"description": "يتنافس هاري في بطولة السحرة الثلاثية الخطيرة."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 30,
+		"year": 2000,
+		"pages": 636,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-4.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Order of the Phoenix",
+			"description": "Harry discovers a secret society preparing for Voldemort's return."
+		},
+		"ar": {
+			"title": "هاري بوتر و جماعة العنقاء",
+			"description": "يكتشف هاري مجتمعًا سريًا يستعد لعودة فولدمورت."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 35,
+		"year": 2003,
+		"pages": 766,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-5.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Half-Blood Prince",
+			"description": "Harry learns more about Voldemort's past and the Horcruxes."
+		},
+		"ar": {
+			"title": "هاري بوتر والأمير الهجين",
+			"description": "يتعلم هاري المزيد عن ماضي فولدمورت والهوركروكس."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 33,
+		"year": 2005,
+		"pages": 607,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-6.jpg"
+	},
+	{
+		"en": {
+			"title": "Harry Potter and the Deathly Hallows",
+			"description": "Harry and his friends face their final battle against Voldemort."
+		},
+		"ar": {
+			"title": "هاري بوتر ومقدسات الموت",
+			"description": "يخوض هاري وأصدقاؤه المعركة النهائية ضد فولدمورت."
+		},
+		"author": "674493cc9409e5df7a675d6e",
+		"price": 38,
+		"year": 2007,
+		"pages": 607,
+		"genres": [
+			"673bb0fe5c7b2e4bffe7d9af",
+			"673bb0fe5c7b2e4bffe7d9a3",
+			"673bb0fe5c7b2e4bffe7d9a1"
+		],
+		"languages": ["English", "Arabic"],
+		"cover": "harry-potter-7.jpg"
+	},
+	{
+		"en": {
+			"title": "To Kill a Mockingbird",
+			"description": "A novel about racial injustice in the Deep South, seen through a child's eyes."
+		},
+		"ar": {
+			"title": "لقتل عصفور بريء",
+			"description": "رواية عن الظلم العنصري في الجنوب العميق من خلال عيون طفل."
+		},
+		"author": "67449627017749237a69e6af",
+		"price": 14,
+		"year": 1960,
+		"pages": 281,
+		"genres": ["673bb0fe5c7b2e4bffe7d9b4", "673bb0fe5c7b2e4bffe7d9ae"],
+		"languages": ["English"],
+		"cover": "mockingbird.jpg"
+	},
+
+	{
+		"en": {
+			"title": "A Game of Thrones",
+			"description": "The first book in the epic fantasy series A Song of Ice and Fire."
+		},
+		"ar": {
+			"title": "لعبة العروش",
+			"description": "الكتاب الأول في سلسلة الفانتازيا الملحمية أغنية الجليد والنار."
+		},
+		"author": "674493cc9409e5df7a675d6f",
+		"price": 25,
+		"year": 1996,
+		"pages": 694,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a3", "673bb0fe5c7b2e4bffe7d9af"],
+		"languages": ["English", "Arabic"],
+		"cover": "a-game-of-thrones.jpg"
+	},
+	{
+		"en": {
+			"title": "Murder on the Orient Express",
+			"description": "A Hercule Poirot mystery about a murder on a luxurious train."
+		},
+		"ar": {
+			"title": "جريمة في قطار الشرق السريع",
+			"description": "لغز هيركيول بوارو عن جريمة قتل على متن قطار فاخر."
+		},
+		"author": "674493cc9409e5df7a675d70",
+		"price": 18,
+		"year": 1934,
+		"pages": 256,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a4", "673bb0fe5c7b2e4bffe7d9ae"],
+		"languages": ["English", "Arabic"],
+		"cover": "murder-on-the-orient-express.jpg"
+	},
+	{
+		"en": {
+			"title": "The Testaments",
+			"description": "A sequel to The Handmaid's Tale, exploring life in Gilead and beyond."
+		},
+		"ar": {
+			"title": "العهود",
+			"description": "تتمة لقصة حكاية الجارية، تستكشف الحياة في جيلياد وما بعدها."
+		},
+		"author": "674493cc9409e5df7a675d74",
+		"price": 22,
+		"year": 2019,
+		"pages": 419,
+		"genres": ["673c600b896240d44caa2332", "673bb0fe5c7b2e4bffe7d9a3"],
+		"languages": ["English", "Arabic"],
+		"cover": "the-testaments.jpg"
+	},
+	{
+		"en": {
+			"title": "Half of a Yellow Sun",
+			"description": "A powerful novel set during the Nigerian Civil War."
+		},
+		"ar": {
+			"title": "نصف شمس صفراء",
+			"description": "رواية قوية تدور أحداثها خلال الحرب الأهلية النيجيرية."
+		},
+		"author": "674493cc9409e5df7a675d72",
+		"price": 20,
+		"year": 2006,
+		"pages": 448,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a1", "673bb0fe5c7b2e4bffe7d9a9"],
+		"languages": ["English", "Arabic"],
+		"cover": "half-of-a-yellow-sun.jpg"
+	},
+	{
+		"en": {
+			"title": "The Shining",
+			"description": "A psychological horror novel set in the Overlook Hotel."
+		},
+		"ar": {
+			"title": "البريق",
+			"description": "رواية رعب نفسي تدور أحداثها في فندق أوفرلوك."
+		},
+		"author": "674493cc9409e5df7a675d71",
+		"price": 22,
+		"year": 1977,
+		"pages": 447,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a7", "673c600b896240d44caa2332"],
+		"languages": ["English", "Arabic"],
+		"cover": "the-shining.jpg"
+	},
+	{
+		"en": {
+			"title": "Kafka on the Shore",
+			"description": "A surreal and thought-provoking novel by Haruki Murakami."
+		},
+		"ar": {
+			"title": "كافكا على الشاطئ",
+			"description": "رواية سريالية تثير الفكر من تأليف هاروكي موراكامي."
+		},
+		"author": "674493cc9409e5df7a675d73",
+		"price": 19,
+		"year": 2002,
+		"pages": 505,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a1", "673bb0fe5c7b2e4bffe7d9ad"],
+		"languages": ["English", "Arabic"],
+		"cover": "kafka-on-the-shore.jpg"
+	},
+	{
+		"en": {
+			"title": "Love in the Time of Cholera",
+			"description": "A timeless tale of love and passion in a tropical setting."
+		},
+		"ar": {
+			"title": "الحب في زمن الكوليرا",
+			"description": "قصة خالدة عن الحب والشغف في بيئة استوائية."
+		},
+		"author": "674493cc9409e5df7a675d75",
+		"price": 21,
+		"year": 1985,
+		"pages": 368,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a5", "673bb0fe5c7b2e4bffe7d9a1"],
+		"languages": ["English", "Arabic"],
+		"cover": "love-in-the-time-of-cholera.jpg"
+	},
+	{
+		"en": {
+			"title": "Blink: The Power of Thinking Without Thinking",
+			"description": "A book about the power of first impressions and rapid cognition."
+		},
+		"ar": {
+			"title": "ومضة: قوة التفكير بدون تفكير",
+			"description": "كتاب عن قوة الانطباعات الأولى والإدراك السريع."
+		},
+		"author": "674493cc9409e5df7a675d76",
+		"price": 18,
+		"year": 2005,
+		"pages": 304,
+		"genres": ["673bb0fe5c7b2e4bffe7d9a2", "673bb0fe5c7b2e4bffe7d9b4"],
+		"languages": ["English", "Arabic"],
+		"cover": "blink.jpg"
+	}
+]

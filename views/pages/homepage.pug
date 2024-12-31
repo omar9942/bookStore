@@ -1,0 +1,31 @@
+extends ../index
+block content
+  //- Welcome banner
+  .welcome 
+    .overlay
+    .container
+      .text
+        h1= page.greeting
+        p= page.title
+      form
+        input(type="text", id="search", placeholder=`${app.searchBook}`)
+        button(type="submit")
+          svg.icon
+            use(xlink:href='/img/icons.svg#icon-search')
+  //- Books
+  .books
+    .container 
+      .text 
+        h2= page.recent
+        a(href="/books" title=`${app.books}`)= page.checkBooks
+          svg.icon
+            use(xlink:href=`/img/icons.svg#icon-arrow-${lng === "ar" ? "left" : "right"}`)
+      .cardsContainer
+        each book in books
+          .book(price=`${book.price}$`)
+            a.bookLink(href=`/books/${book.slug}` title=`${book.title}`)
+              img(src=`/img/books/${book.cover}`, alt=`${app.coverAlt} ${book.title}`)
+              span.title= book.title
+            a.author(href=`/authors/${book.author.slug}` title=`${book.author.name}`)= book.author.name
+
+

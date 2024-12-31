@@ -1,0 +1,209 @@
+[
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a1",
+		"en": {
+			"name": "Fiction"
+		},
+		"ar": {
+			"name": "خيال"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a4",
+		"en": {
+			"name": "Mystery"
+		},
+		"ar": {
+			"name": "غموض"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a2",
+		"en": {
+			"name": "Non-Fiction"
+		},
+		"ar": {
+			"name": "غير خيالي"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a6",
+		"en": {
+			"name": "Science Fiction"
+		},
+		"ar": {
+			"name": "خيال علمي"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a7",
+		"en": {
+			"name": "Horror"
+		},
+		"ar": {
+			"name": "رعب"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a8",
+		"en": {
+			"name": "Biography"
+		},
+		"ar": {
+			"name": "سيرة ذاتية"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a9",
+		"en": {
+			"name": "History"
+		},
+		"ar": {
+			"name": "تاريخ"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9aa",
+		"en": {
+			"name": "Self-Help"
+		},
+		"ar": {
+			"name": "تطوير الذات"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9ab",
+		"en": {
+			"name": "Children"
+		},
+		"ar": {
+			"name": "أطفال"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a3",
+		"en": {
+			"name": "Fantasy"
+		},
+		"ar": {
+			"name": "فانتازيا"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9ad",
+		"en": {
+			"name": "Poetry"
+		},
+		"ar": {
+			"name": "شعر"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9ae",
+		"en": {
+			"name": "Thriller"
+		},
+		"ar": {
+			"name": "إثارة"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9af",
+		"en": {
+			"name": "Adventure"
+		},
+		"ar": {
+			"name": "مغامرة"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9a5",
+		"en": {
+			"name": "Romance"
+		},
+		"ar": {
+			"name": "رومانسي"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9b1",
+		"en": {
+			"name": "Religion"
+		},
+		"ar": {
+			"name": "دين"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9b2",
+		"en": {
+			"name": "Art"
+		},
+		"ar": {
+			"name": "فن"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9b3",
+		"en": {
+			"name": "Comics"
+		},
+		"ar": {
+			"name": "قصص مصورة"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9b4",
+		"en": {
+			"name": "Philosophy"
+		},
+		"ar": {
+			"name": "فلسفة"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9ac",
+		"en": {
+			"name": "Young Adult"
+		},
+		"ar": {
+			"name": "الشباب"
+		}
+	},
+	{
+		"_id": "673bb0fe5c7b2e4bffe7d9b0",
+		"en": {
+			"name": "Cookbooks"
+		},
+		"ar": {
+			"name": "كتب الطبخ"
+		}
+	},
+	{
+		"_id": "673c600b896240d44caa2332",
+		"en": {
+			"name": "Dystopia"
+		},
+		"ar": {
+			"name": "ديستوبيا"
+		}
+	},
+	{
+		"_id": "673c9912631eb15eec5ea798",
+		"en": {
+			"name": "Short Story"
+		},
+		"ar": {
+			"name": "قصة قصيرة"
+		}
+	},
+	{
+		"_id": "674c524bab865157897eba02",
+		"en": {
+			"name": "Genreless"
+		},
+		"ar": {
+			"name": "بدون تصنيف"
+		}
+	}
+]

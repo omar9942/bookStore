@@ -1,0 +1,40 @@
+header
+  .searchForm 
+    span X
+    h3= app.searchFor
+    form.head-search(onSubmit="handleSearch(event)")
+      .select
+        .book-select 
+          input#book(type="radio" name="searchFor" value="book" checked)
+          label(for="book")= app.book
+        .author-select 
+          input#author(type="radio" name="searchFor" value="author")
+          label(for="author")= app.author
+      .search
+        input#searchVal(type='text',  placeholder=`${app.search}`)
+        button(type="submit") 
+          svg.icon 
+            use(xlink:href='/img/icons.svg#icon-search')
+  .container
+    .logo-lang
+      a.logo(href="/" title=`${app.title}`)
+        img(src="/img/logo.png" alt=app.logoAlt)
+        span= app.title
+      form(action='/change-language', method='get')
+        select(name="lng", onchange='this.form.submit()') 
+          option(value='ar', selected=lng === 'ar') العربية
+          option(value='en', selected=lng === 'en') English
+    ul.nav
+      li.search
+        span= app.search
+        svg.icon 
+          use(xlink:href='/img/icons.svg#icon-search')
+      li: a(href="/books" title=`${app.books}`) #{app.books}
+      li: a(href="/genres" title=`${app.genres}`) #{app.genres}
+      li: a(href="/authors" title=`${app.authors}`) #{app.authors}
+      li: a.login(href="/login" title=`${app.login}`)
+        span= app.login
+        svg.icon
+          use(xlink:href='/img/icons.svg#icon-log-in')
+
+

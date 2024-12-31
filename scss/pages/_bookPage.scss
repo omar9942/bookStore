@@ -1,0 +1,141 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.book-preview {
+	margin: 40px auto;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: $card-shadow;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 25px;
+	.cover-actions {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.cover {
+			width: 100%;
+			max-width: 300px;
+			height: auto;
+			object-fit: cover;
+			border-radius: $radius;
+			margin-bottom: 20px;
+		}
+		.actions {
+			display: flex;
+			gap: 10px;
+			// width: 100%;
+			button {
+				@include button(10px);
+				@include flex;
+				cursor: pointer;
+				transition: $transition;
+				gap: 5px;
+				border-radius: $radius;
+				border: none;
+				.icon {
+					width: 18px;
+					height: 18px;
+				}
+			}
+			.btn-cart {
+				background-color: $orange;
+				color: $bg-color;
+				.icon {
+					fill: $bg-color;
+				}
+			}
+			.btn-favourites {
+				background-color: whitesmoke;
+				color: $black;
+				border: $border;
+				.icon {
+					fill: $orange;
+				}
+			}
+		}
+	}
+	.book-details {
+		flex: 1;
+		.title {
+			font-size: 30px;
+			line-height: 1.2;
+		}
+		.author {
+			font-size: 14px;
+			a {
+				color: $dark-red;
+				transition: $transition;
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+		.price {
+			font-size: 35px;
+			color: $red;
+			font-weight: bold;
+		}
+		.year,
+		.pages {
+			font-size: 16px;
+		}
+		.genre-lang {
+			display: flex;
+			gap: 15px;
+			margin: 10px 0;
+			.box {
+				background-color: rgb(248, 247, 247);
+				border: $border;
+				padding: 10px;
+				border-radius: $radius;
+				.box-name {
+					display: block;
+					color: $black;
+					line-height: 1.2;
+					margin-bottom: 5px;
+				}
+				.tag {
+					background-color: #e9ecef;
+					border: $border;
+					padding: 5px 10px;
+					margin: 8px 8px 0 0;
+					border-radius: 20px;
+					display: inline-block;
+					font-size: 0.8rem;
+					transition: $transition;
+				}
+				&.genres .tag:hover {
+					background-color: $yellow;
+				}
+			}
+		}
+		.description {
+			strong {
+				font-size: 20px;
+			}
+			p {
+				word-wrap: break-word;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.book-preview .cover-actions {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.book-preview {
+		.cover-actions .cover {
+			max-width: 250px;
+		}
+		.book-details .title {
+			font-size: 25px;
+		}
+	}
+}
